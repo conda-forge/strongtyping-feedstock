@@ -20,6 +20,7 @@ requirements:
     - pip
     - python >=3.7
   run:
+    - mypy
     - python >=3.7
 
 test:
