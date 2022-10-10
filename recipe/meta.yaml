@@ -1,5 +1,5 @@
 {% set name = "strongtyping" %}
-{% set version = "3.10.2" %}
+{% set version = "3.10.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/strongtyping-{{ version }}.tar.gz
-  sha256: 6c4adf66b740d6d753ef7d80c4b2f992981e3d7ff86a39c1e82d393d9150dd29
+  sha256: d1cc1a567b39b3b9a6f024a11ffa66d89e4dd18b24036491ee50c8c5c058bb94
 
 build:
   number: 0
