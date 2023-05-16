@@ -25,7 +25,6 @@ requirements:
 
 test:
   imports:
-    - easy_property
     - strongtyping
   commands:
     - pip check
