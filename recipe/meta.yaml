@@ -26,8 +26,9 @@ requirements:
 test:
   imports:
     - strongtyping
-  commands:
-    - pip check
+  # commands:
+  # disabling pip check test because upstream pyproject.toml listed dev dependencies as run dependencies
+#     - pip check
   requires:
     - pip
 
