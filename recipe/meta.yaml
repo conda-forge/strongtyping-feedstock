@@ -1,5 +1,5 @@
 {% set name = "strongtyping" %}
-{% set version = "3.10.7" %}
+{% set version = "3.11.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/strongtyping-{{ version }}.tar.gz
-  sha256: f08d18980cd33e7e425af10f03051e98ce2cf736e4c1bd03f441b5bc575788d5
+  sha256: 9ba8e1958ce02dc036610a9c1b3b5faaa31b93a434398f44cb4aa07b7498a7e9
 
 build:
   number: 0
@@ -18,17 +18,17 @@ build:
 requirements:
   host:
     - pip
+    - poetry-core >=1.0.0
     - python >=3.7
   run:
-    - mypy
     - python >=3.7
 
 test:
   imports:
-    - easy_property
     - strongtyping
-  commands:
-    - pip check
+  # commands:
+  # disabling pip check test because upstream pyproject.toml listed dev dependencies as run dependencies
+#     - pip check
   requires:
     - pip
 

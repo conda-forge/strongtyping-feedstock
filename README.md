@@ -1,11 +1,11 @@
-About strongtyping
-==================
+About strongtyping-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/strongtyping-feedstock/blob/main/LICENSE.txt)
 
 Home: https://strongtyping.readthedocs.io/en/latest/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/strongtyping-feedstock/blob/main/LICENSE.txt)
 
 Summary: Decorator which checks whether the function is called with the correct type of parameters
 
