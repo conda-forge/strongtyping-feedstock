@@ -1,5 +1,5 @@
 {% set name = "strongtyping" %}
-{% set version = "3.11.1" %}
+{% set version = "3.11.3" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/strongtyping-{{ version }}.tar.gz
-  sha256: 9ba8e1958ce02dc036610a9c1b3b5faaa31b93a434398f44cb4aa07b7498a7e9
+  url: https://github.com/FelixTheC/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: 95b75b94f5034017a701333df7c8da0cddc7105dbbf4ad564a43d6aca7fe35e1
 
 build:
   number: 0
@@ -19,9 +19,9 @@ requirements:
   host:
     - pip
     - poetry-core >=1.0.0
-    - python >=3.7
+    - python >=3.11
   run:
-    - python >=3.7
+    - python >=3.11
 
 test:
   imports:
