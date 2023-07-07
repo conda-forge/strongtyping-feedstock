@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/FelixTheC/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 9fb89efce062cce779eac7b2c35ea25e5364a12f75b02aa28794d01ad57b8a7e
+  sha256: 95b75b94f5034017a701333df7c8da0cddc7105dbbf4ad564a43d6aca7fe35e1
 
 build:
   number: 0
