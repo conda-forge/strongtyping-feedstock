@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/strongtyping-{{ version }}.tar.gz
+  url: https://github.com/FelixTheC/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
   sha256: 9fb89efce062cce779eac7b2c35ea25e5364a12f75b02aa28794d01ad57b8a7e
 
 build:
