@@ -1,5 +1,5 @@
 {% set name = "strongtyping" %}
-{% set version = "3.11.3" %}
+{% set version = "3.11.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/FelixTheC/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 95b75b94f5034017a701333df7c8da0cddc7105dbbf4ad564a43d6aca7fe35e1
+  sha256: a7ca478854b322ba085aba1e2b71eef454877ba92553076e3f351f888ff333b8
 
 build:
   number: 0
