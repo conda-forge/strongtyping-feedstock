@@ -1,5 +1,5 @@
 {% set name = "strongtyping" %}
-{% set version = "3.12.0" %}
+{% set version = "3.12.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/FelixTheC/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 8a030fc33679804566f4f645aa055bfd67e52aaffef37a8e2c0df02c401738fc
+  sha256: 3e482909134afacda65ad2d1fddf8610c15faec62d9d40b75303bc8105131123
 
 build:
   number: 0
@@ -19,16 +19,16 @@ requirements:
   host:
     - pip
     - poetry-core >=1.0.0
-    - python >=3.11
+    - python >=3.10,<4.0
   run:
-    - python >=3.11
+    - python >=3.10,<4.0
+    - ujson >=5.5.0,<6.0.0
 
 test:
   imports:
     - strongtyping
-  # commands:
-  # disabling pip check test because upstream pyproject.toml listed dev dependencies as run dependencies
-#     - pip check
+  commands:
+    - pip check
   requires:
     - pip
 
