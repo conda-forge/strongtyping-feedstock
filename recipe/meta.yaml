@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "strongtyping" %}
 {% set version = "3.12.1" %}
 
@@ -11,7 +12,7 @@ source:
   sha256: 3e482909134afacda65ad2d1fddf8610c15faec62d9d40b75303bc8105131123
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -19,9 +20,9 @@ requirements:
   host:
     - pip
     - poetry-core >=1.0.0
-    - python >=3.10,<4.0
+    - python {{ python_min }}
   run:
-    - python >=3.10,<4.0
+    - python >={{ python_min }},<4.0
     - ujson >=5.5.0,<6.0.0
 
 test:
@@ -31,6 +32,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://strongtyping.readthedocs.io/en/latest/
