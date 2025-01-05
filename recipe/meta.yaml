@@ -1,6 +1,6 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.13" %}
 {% set name = "strongtyping" %}
-{% set version = "3.12.1" %}
+{% set version = "3.13.1" %}
 
 
 package:
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://github.com/FelixTheC/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 3e482909134afacda65ad2d1fddf8610c15faec62d9d40b75303bc8105131123
+  sha256: af5bec786ce0c006eddc347366f4a8042b070319ecb22ca19f8dde2ea4ee8563
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -21,6 +21,7 @@ requirements:
     - pip
     - poetry-core >=1.0.0
     - python {{ python_min }}
+    - setuptools
   run:
     - python >={{ python_min }},<4.0
     - ujson >=5.5.0,<6.0.0
