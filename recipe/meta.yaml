@@ -1,6 +1,6 @@
 {% set python_min = "3.13" %}
 {% set name = "strongtyping" %}
-{% set version = "3.13.1" %}
+{% set version = "3.13.2" %}
 
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/FelixTheC/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: af5bec786ce0c006eddc347366f4a8042b070319ecb22ca19f8dde2ea4ee8563
+  sha256: 174d330c9ecc311ff0b6111584a2b76c9c13cb5587d224be0adaded5b994b95a
 
 build:
   number: 0
