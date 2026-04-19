@@ -3,7 +3,7 @@ schema_version: 1
 context:
   python_min: 3.13
   name: strongtyping
-  version: "3.13.5"
+  version: "3.13.6"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://github.com/FelixTheC/${{ name }}/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: d075e2d446c94acdef6ea1015d8d5a9c55c09debc62f67af9039d17cc4fffa18
+  sha256: de6fb2b7ef4b1c535cc856dd4ea06d17cfa59f86b760de973499a3411d953cf5
 
 build:
   number: 0
