@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  python_min: 3.13
+  python_min: "3.13"
   name: strongtyping
   version: "3.13.6"
 
@@ -26,14 +26,18 @@ requirements:
     - wheel
   run:
     - python >=${{ python_min }}
-    - ujson >=5.5.0,<6.0.0
+    - ujson 5.6.0
+    - mypy 1.20.1
+    - python-librt 0.9.0
 
 tests:
   - python:
       imports:
         - strongtyping
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: Decorator which checks whether the function is called with the correct type of parameters
