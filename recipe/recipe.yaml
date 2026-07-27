@@ -34,6 +34,8 @@ requirements:
     - ujson >=5.12.0
     - python-librt >=0.10.0
     - typing-extensions >=4.4.0
+    - pytest >=9.0.3
+    - ruff >=0.15.12
 
 tests:
   - python:
