@@ -2,19 +2,19 @@ schema_version: 1
 
 context:
   name: strongtyping
-  version: "3.14.5"
+  version: "3.14.6"
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-  url: https://github.com/FelixTheC/${{ name }}/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 0abb191ef6d66ad74b97a8b21a16ce7725e9a62cf5ae34869073550a63568d0e
+  url: https://github.com/FelixTheC/${{ name }}/archive/refs/tags/${{ version }}.tar.gz
+  sha256: 364ca334f8c7dc80c52ea3051f0f07f0d246b11f0ae27e9f89e227361df081a0
 
 build:
   skip: match(python, "<3.14")
-  number: 1
+  number: 0
   script: ${{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -31,9 +31,9 @@ requirements:
     - python-librt >=0.10.0
   run:
     - python
-    - ujson >=5.12.0
-    - python-librt >=0.10.0
-    - typing-extensions >=4.4.0
+    - ujson >=6.0.0
+    - python-librt >=0.16.0
+    - typing_extensions >=4.16.0
     - pytest >=9.0.3
     - ruff >=0.15.12
 
